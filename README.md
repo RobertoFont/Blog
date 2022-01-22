@@ -1,2 +1,2 @@
 # Blog
-Resources associated with my personal blog
+This repository contains resources, like Jupyter notebooks, associated with my personal blog.
