@@ -1,6 +1,6 @@
 # Pixel-art color-by-number generator
 
-![Example result](C:\GitHub\Blog\pixel-art-color-by-number-generator\img\color-by-number-generator.gif)
+![Example result](img/color-by-number-generator.gif)
 
 This project allows the creation of a color-by-number worksheet from any image. The idea is taken from [this website](https://www.coloringsquared.com/). The code automatically performs the following steps:
 
@@ -22,6 +22,6 @@ The worksheet can be generated in any of three variants:
 
 - Each cell displays a subtraction that must be solved to obtain the corresponding color.
 
-![Three modes](C:\GitHub\Blog\pixel-art-color-by-number-generator\img\modes.png)
+![Three modes](img/modes.png)
 
 Kids love it!
