@@ -1,6 +1,8 @@
 # Pixel-art color-by-number generator
 
-![Example result](img/color-by-number-generator.gif)
+<img src="img/color-by-number-generator.gif" title="" alt="Example result" data-align="center">
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RobertoFont/Blog/blob/main/pixel-art-color-by-number-generator/Pixel-art-color-by-number-generator.ipynb)
 
 This project allows the creation of a color-by-number worksheet from any image. The idea is taken from [this website](https://www.coloringsquared.com/). The code automatically performs the following steps:
 
@@ -22,6 +24,8 @@ The worksheet can be generated in any of three variants:
 
 - Each cell displays a subtraction that must be solved to obtain the corresponding color.
 
-![Three modes](img/modes.png)
+<img src="img/modes.png" title="" alt="Three modes" data-align="center">
 
 Kids love it!
+
+You can try it on Google Colab and use your own images: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/RobertoFont/Blog/blob/main/pixel-art-color-by-number-generator/Pixel-art-color-by-number-generator.ipynb)
