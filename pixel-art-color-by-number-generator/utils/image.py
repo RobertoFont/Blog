@@ -1,4 +1,5 @@
 from PIL import Image
+import math
 import numpy as np
 
 def crop_central(input_image):
@@ -76,18 +77,20 @@ def limit_colors(input_image, n_colors):
     colors = []
     for idx in range(n_colors):
         colors.append(palette[idx*3:idx*3+3])
-        
-    return paletted_im, colors
 
-def pixelate_image(input_image, target_size=24):
+    colors = np.minimum(17 * (np.array(colors) // 17 + 1), [255, 255, 255])
+    return paletted_im, colors.tolist()
+
+def pixelate_image(input_image, target_size=32):
     """Resample input image to desired resolution creating a pixelated version
     
     :param input_image: initial image
     :type input_image: PIL Image instance
-    :param target_size: desired output size in pixels, defaults to 24
+    :param target_size: desired output size in pixels, defaults to 32
     :type target_size: int
     
     :rtype: PIL Image instance
     :return: pixelated version of input image of size target_size X target_size
     """
-    return input_image.resize((target_size, target_size), Image.NEAREST)
+    return input_image.resize((target_size, target_size), Image.HAMMING, reducing_gap = math.sqrt(3))
+
