@@ -166,10 +166,8 @@ def generate_color_by_number_sheet(input_image, color_list, mode='n'):
 
     offset = 10
 
-    w = table_img_w
-    h = (table_img_h + legend_img_h + offset)
-    color_sheet = Image.new('RGBA', (w, h), (255, 255, 255, 255))
+    color_sheet = Image.new('RGBA', (table_img_w, table_img_h + legend_img_h + offset), (255, 255, 255, 255))
     color_sheet.paste(table_image)
     color_sheet.paste(legend_image, (0, table_img_h + offset))
 
-    return color_sheet.resize((w/2, h/2))
+    return color_sheet
